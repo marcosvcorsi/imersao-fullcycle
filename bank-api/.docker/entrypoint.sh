@@ -1,4 +1,6 @@
 #!/bin/bash
 
-npm i --silent
-npm run start:dev
+yarn
+yarn typeorm migration:run
+yarn console fixtures
+yarn start:dev
